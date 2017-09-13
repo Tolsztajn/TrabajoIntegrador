@@ -46,12 +46,15 @@ table {
 	border-spacing: 0;
 }
 
+
+
 /* -------------------------------------------- */
 
 .container {
 	max-width: 768px;
 	margin: 0 auto;
   padding-top: 20px;
+	font-size: 25px;
 
 }
 
@@ -251,18 +254,17 @@ table {
 	}
 
 	  .second-nav ul li {
-	    float: left;
-	    margin-right: 3%;
-			border: none;
+	    display: inline-block;
+	 		border: none;
 			background-color: #D1D3D4;
-			padding:2% 3% 2% 3%;
+			padding:1% 2% 2% 1%;
 			border-radius: 50px;
 	}
 
 	.second-nav li a {
 	  text-decoration: none;
 	  display: inline-block;
-	  font-size: 25px;
+	  font-size: 24px;
 		color: #fff;
 	}
 

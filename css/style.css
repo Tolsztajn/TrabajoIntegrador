@@ -7,6 +7,23 @@
 html{
   overflow-y:scroll;
 }
+
+.login  {
+  padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #D1D3D4;
+	border-radius: 30px;
+  list-style: none;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.login a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 13px;
+}
+
 body{
   background:#D1D3D4;
   display:flex;

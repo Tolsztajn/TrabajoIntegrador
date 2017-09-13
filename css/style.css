@@ -24,6 +24,8 @@ html{
   font-size: 13px;
 }
 
+
+
 body{
   background:#D1D3D4;
   display:flex;
@@ -74,4 +76,15 @@ input[type="submit"]:active{
   form{
     width:95%;
   }
+}
+
+.recordame {
+  display: block;
+    float: left;
+    width: 100%;
+  }
+
+.recordame input{
+  width: 20px;
+    display: inline;
 }

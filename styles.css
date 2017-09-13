@@ -65,85 +65,61 @@ table {
 
 .first-nav {
   margin-bottom: 20px;
+  border-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color:#D1D3D4;
+  padding-bottom: 20px;
+
 }
 
 .menu-button {
   height: 32px;
   width: 25px;
-	float: right;
 }
 
 .logo1 {
-	width: 74px;
-	}
+  width: 74px;
+  height: 32px;
+  position: absolute;
+  margin-left: 28%;
+}
 
 .login ul {
-  padding-top: 5px;
-	padding-bottom: 5px;
-	background-color: #D1D3D4;
-	border-radius: 30px;
+  padding-top: 10px;
 }
 
 
 .login ul li a {
-	color: #fff;
+  color: #808285;
+}
+
+.login ul li a:hover {
+  text-decoration: underline;
 }
 
 .login{
-  text-align: center;
+  float: right;
 }
 
 .second-nav {
-  text-align: center;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	text-align: center;
 }
-
-.second-nav li {
-	border-bottom: solid;
-	border-bottom-color:#D1D3D4;
-	border-width: thin;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.second-nav li:first-child {
-	border-top: solid;
-	border-top-color: #D1D3D4;
-	border-width: thin;
-
-}
-
-.second-nav li a {
-	color: #808285;
-	display: inline-block;
-	width: 100%;
-	font-size: 100%
- }
 
 /* Main Post */
 
-.main-post-img {
-	max-width: 94%;
-	position: absolute;
-
-}
-
 .logo2 {
-	max-width:50%;
-	position: relative;
-	padding: 9%;
-	left: 25%;
-	margin-top: 8%;
+  display: none;
 }
 
+.main-post-img {
+  max-width: 100%;
+}
 
 .sub-title {
   color:  #808285;
   font-size: 12px;
   text-align: center;
   letter-spacing: 5px;
-	margin-top: 50px;
 }
 
 .post-title {
@@ -155,12 +131,7 @@ table {
 }
 
 .post-info {
-	text-align: center;
-}
-
-.post-info p {
-	color:  #808285;
-	margin-bottom: 20px;
+  display: none;
 }
 
 .main-post {
@@ -177,6 +148,10 @@ table {
   max-width: 35%;
   position: absolute;
 	margin-bottom: 10px;
+}
+
+.post-info-destino {
+  visibility: hidden;
 }
 
 .destino {
@@ -222,6 +197,9 @@ table {
 	border-top-color:#D1D3D4;
 }
 
+
+
+
 .nav-footer ul li {
 	margin-top: 5px;
 	border-style: solid;
@@ -230,7 +208,7 @@ table {
 }
 
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 
 	.container {
 		max-width: 992px;
@@ -241,95 +219,41 @@ table {
 	}
 
 	.logo1 {
-		display: block;
-		margin: auto;
-		width: 14%;
+		margin-left: 0px;
+	}
+
+		.second-nav {
+		visibility: visible;
+		text-align: center;
+	  margin-left: 26%;
+		margin-top: 20px;
 	}
 
 	.second-nav ul {
 	  overflow: hidden;
-	}
+	  }
 
 	  .second-nav ul li {
 	    float: left;
-	    margin-right: 3%;
-			border: none;
-			background-color: #D1D3D4;
-			padding:2% 3% 2% 3%;
-			border-radius: 50px;
-	}
+	    margin-right: 30px;
+	  }
 
 	.second-nav li a {
 	  text-decoration: none;
+	  color: #808285;
 	  display: inline-block;
-	  font-size: 25px;
-		color: #fff;
-	}
-
-	.second-nav li:first-child {
-		border-top: none;
-	}
-
-	.login ul {
-		background-color: #fff;
-		border-top: solid;
-		border-bottom: solid;
-		border-width: thin;
-		border-radius: 0px;
-		border-color:#808285;
-	}
-
-	.login ul li a {
-		color: #808285;
-		font-size:25px;
-	}
-
-	.main-post {
-		margin-bottom: 40px;
-	}
-
-	.sub-title {
-		margin-top: 85px;
+	  width: 100%;
 		font-size: 20px;
 	}
 
-	.post-title {
-		font-size: 50px;
+	.second-nav li a:hover {
+	  text-decoration: underline;
 	}
 
-	.post-info p {
-		font-size: 25px;
-	}
-
-	.sub-title-destino {
-		font-size: 18px;
-	}
-
-	.post-title-destino {
-		font-size: 35px;
-	}
-
-	.destino {
-		margin-bottom: 100px;
-	}
-
-	.main-footer {
-		border-top: solid;
-		border-bottom: solid;
-		border-width: thin;
-		border-color: #D1D3D4;
-
-	}
-
-.main-footer ul li {
-	border-bottom:none;
-	display: inline-block;
-	padding: 2%;
-}
 
 
-	.main-footer a {
-	font-size: 25px;
-	}
 
-}
+
+
+
+}*/

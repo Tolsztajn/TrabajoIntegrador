@@ -1,0 +1,440 @@
+/*  GLOBALES */
+
+/* CSS Reset */
+
+*{
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* -------------------------------------------- */
+
+.container {
+	max-width: 768px;
+	margin: 0 auto;
+  padding-top: 20px;
+	font-size: 25px;
+
+}
+
+/* -------------------------------------------- */
+
+/* Main styles Mobile First */
+
+/* -------------------------------------------- */
+
+/* Home */
+
+/* Header */
+
+.first-nav {
+  margin-bottom: 20px;
+}
+
+.menu-button {
+  height: 32px;
+  width: 25px;
+	float: right;
+}
+
+.logo1 {
+	width: 74px;
+	}
+
+.login ul {
+  padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #D1D3D4;
+	border-radius: 30px;
+}
+
+
+.login ul li a {
+	color: #fff;
+}
+
+.login{
+  text-align: center;
+}
+
+.second-nav {
+  text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.second-nav li {
+	border-bottom: solid;
+	border-bottom-color:#D1D3D4;
+	border-width: thin;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.second-nav li:first-child {
+	border-top: solid;
+	border-top-color: #D1D3D4;
+	border-width: thin;
+
+}
+
+.second-nav li a {
+	color: #808285;
+	display: inline-block;
+	width: 100%;
+	font-size: 100%
+ }
+/* -------------------------------------------- */
+
+/* Main Post */
+
+.main-post-img {
+	max-width: 94%;
+	position: absolute;
+
+}
+
+.logo2 {
+	max-width:50%;
+	position: relative;
+	padding: 9%;
+	left: 25%;
+	margin-top: 8%;
+}
+
+
+.sub-title {
+  color:  #808285;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 5px;
+	margin-top: 50px;
+}
+
+.post-title {
+  color:  #808285;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.post-info {
+	text-align: center;
+}
+
+.post-info p {
+	color:  #808285;
+	margin-bottom: 20px;
+}
+
+.main-post {
+  margin-bottom: 20px;
+  border-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color:#D1D3D4;
+}
+
+/* -------------------------------------------- */
+
+/* Otros destinos */
+
+.otro-img {
+  max-width: 35%;
+  position: absolute;
+	margin-bottom: 10px;
+}
+
+.destino {
+	overflow: hidden;
+	margin-bottom: 40px;;
+}
+
+.sub-title-destino {
+	position: relative;
+	color:  #808285;
+  font-size: 9px;
+  letter-spacing: 5px;
+	left: 41%;
+	margin-top: 0px;
+
+}
+
+.post-title-destino {
+	position: relative;
+	color:  #808285;
+	left: 41%;
+	font-size: 15px;
+	max-width: 60%;
+	margin-top: 5px;
+}
+
+/* -------------------------------------------- */
+
+/* Footer */
+
+.main-footer {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.main-footer a {
+	color: #808285;
+	font-size: 14px;
+}
+
+.nav-footer {
+	border-style: solid;
+	border-top-width: thin;
+	border-top-color:#D1D3D4;
+}
+
+.nav-footer ul li {
+	margin-top: 5px;
+	border-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color:#D1D3D4;
+}
+
+/* -------------------------------------------- */
+
+@media (min-width: 768px) {
+
+	.container {
+		max-width: 992px;
+	}
+
+	.menu-button {
+		display: none;
+	}
+
+	.logo1 {
+		display: block;
+		margin: auto;
+		width: 15%;
+	}
+
+	.second-nav ul {
+	  overflow: hidden;
+	}
+
+	 	.second-nav ul li {
+	    display: inline-block;
+	 		border: none;
+			background-color: #D1D3D4;
+			padding:1% 2% 1% 2%;
+			border-radius: 50px;
+	}
+
+	.second-nav li a {
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 24px;
+		color: #fff;
+	}
+
+	.second-nav li:first-child {
+		border-top: none;
+	}
+
+	.login ul {
+		background-color: #fff;
+		border-top: solid;
+		border-bottom: solid;
+		border-width: thin;
+		border-radius: 0px;
+		border-color:#808285;
+	}
+
+	.login ul li a {
+		color: #808285;
+		font-size:25px;
+	}
+
+	.main-post {
+		margin-bottom: 40px;
+	}
+
+	.sub-title {
+		margin-top: 85px;
+		font-size: 20px;
+	}
+
+	.post-title {
+		font-size: 50px;
+	}
+
+	.post-info p {
+		font-size: 25px;
+	}
+
+	.sub-title-destino {
+		font-size: 18px;
+	}
+
+	.post-title-destino {
+		font-size: 35px;
+	}
+
+	.destino {
+		margin-bottom: 100px;
+	}
+
+	.main-footer {
+		border-top: solid;
+		border-bottom: solid;
+		border-width: thin;
+		border-color: #D1D3D4;
+
+	}
+
+.main-footer ul li {
+	border-bottom:none;
+	display: inline-block;
+	padding: 2%;
+}
+
+
+	.main-footer a {
+	font-size: 25px;
+	}
+
+}
+
+/* -------------------------------------------- */
+
+@media (min-width:992px) {
+
+	.container {
+		max-width: 1200px;
+	}
+
+	.logo1 {
+		width: 10%;
+	}
+
+	.second-nav ul li {
+		padding: 0% 2%;
+	}
+
+	.second-nav ul li a {
+		font-size: 15px;
+		padding: 9px;
+	}
+
+	.second-nav ul li:hover {
+		opacity: 0.5;
+	}
+
+	.login ul {
+		padding: 4px;
+	}
+
+	.login ul li a {
+		font-size: 15px;
+	}
+
+	.main-post-img {
+		max-width: 91%;
+	}
+
+	.sub-title {
+		margin-top: 125px;
+		font-size: 15px;
+	}
+
+	.post-title {
+		font-size: 40px;
+	}
+
+	.post-info p {
+		font-size: 18px;
+	}
+
+	.sub-title-destino {
+		font-size: 15px;
+	}
+
+	.post-title-destino {
+		font-size: 30px;
+	}
+
+	.destino {
+		margin-bottom: 250px;
+	}
+
+	.main-footer ul li {
+		padding: 5px;
+	}
+
+	.main-footer a {
+		font-size: 15px;
+	}
+}
+
+/* -------------------------------------------- */
+
+/* Registrarse*/
+
+.mujer, .hombre {
+    width: 50%;
+    float: left;
+    margin: 0 0 10px;
+}
+
+.mujer input, .hombre input{
+	width: 20px!important;
+}
+.registro input {
+
+	margin-bottom: 15px;
+	    border: 1px solid grey;
+			padding-left: 5%;
+    width: 95%;
+}
+
+/* -------------------------------------------- */

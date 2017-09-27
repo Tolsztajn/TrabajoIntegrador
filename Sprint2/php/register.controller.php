@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-define("DB_PATH", "db/usuarios.json");
+define("DB_PATH", "../db/usuarios.json");
 
 require "../helpers.php";
 

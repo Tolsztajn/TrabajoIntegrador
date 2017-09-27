@@ -10,4 +10,16 @@ function getUsers ($pathDB)
 	return $usuarios;
 }
 
+function getUserByEmail ($mail, $pathDB)
+{
+	$usuarios = getUsers($pathDB);
+	$usuario = false;
+	for($i=0;$i<count($usuarios); $i++){
+		if($usuarios[$i]['mail'] == $mail){
+			$usuario = $usuarios[$i];
+			break;
+		}
+	}
+	return $usuario;
+}
 ?>

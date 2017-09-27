@@ -54,7 +54,7 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
               </div>
             </div>
           <?php endif ?>
-          <?php //unset($errores) ?>
+          <?php unset($_SESSION["errores"]) ?>
           <form class="registro" action="php/register.controller.php" method="post">
           <!--Datos registro-->
           <input type="text" placeholder="Nombre" name="name"><br>

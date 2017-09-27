@@ -29,7 +29,7 @@
           </nav>
           <nav class="login">
             <ul>
-              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="login.php">LOGIN</a></li>
               <?php if (isset($_SESSION["usuario"])):?>
               <li><a href="#">¡Bienvenido <?php echo $_SESSION["usuario"]; ?>!</a></li>
             <?php endif?>

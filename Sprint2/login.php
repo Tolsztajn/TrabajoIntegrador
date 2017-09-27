@@ -50,7 +50,7 @@
       <button type="submit" name="button" class="btn btn-default">Ingresar</button>
       <ul class="list-unstyled list-inline">
         <li><a href="#">Olvide mi contraseña</a></li>
-        <li><a href="register.html">Crear usuario</a></li>
+        <li><a href="register.php">Crear usuario</a></li>
       </ul>
     </form>
   </div>

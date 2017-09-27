@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+$name = $_SESSION["inputsValues"]["name"]?? "";
+$surname = $_SESSION["inputsValues"]["surname"]?? "";
+$telefono = $_SESSION["inputsValues"]["telefono"]?? "";
+$mail = $_SESSION["inputsValues"]["mail"]?? "";
+ ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -34,13 +43,25 @@
       </header>
 
         <main>
+          <?php if (!empty($_SESSION["errores"])): ?>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="alert alert-danger">
+                  <?php foreach ($_SESSION["errores"] as $value): ?>
+                    <p><?php echo $value; ?></p>
+                  <?php endforeach ?>
+                </div>
+              </div>
+            </div>
+          <?php endif ?>
+          <?php //unset($errores) ?>
           <form class="registro" action="php/register.controller.php" method="post">
           <!--Datos registro-->
           <input type="text" placeholder="Nombre" name="name"><br>
           <input type="text" placeholder="Apellido" name="surname"><br>
           <input type="text" placeholder="Telefono" name="telefono"><br>
           <input type="text" placeholder="Mail" name="mail"><br>
-          <input type="password" placeholder="Contraseña" name="contraseña"><br>
+          <input type="password" placeholder="Contraseña" name="password"><br>
 
            <!-- DIA DE NACIMIENTO-->
               <select name=birth-day>

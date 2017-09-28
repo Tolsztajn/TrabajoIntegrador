@@ -230,6 +230,13 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
               <br>
               <p class="mujer">Mujer<input type="radio" name="mujer"></p>
               <p class="hombre">Hombre<input type="radio" name="hombre"></p>
+<!--agregado-->
+              <div class="form-group">
+                                  <label for="avatar">Foto de Perfil: </label><br/>
+                                  <input type="file" class="form-control" name="avatar" id="avatar" value="" />
+                                  <span class="help-block"></span>
+              </div>
+<!--agregado-->
               <input type="submit" value="Crear cuenta" >
             </form>
         </main>

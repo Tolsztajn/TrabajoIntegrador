@@ -36,7 +36,7 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
           </nav>
           <nav class="login">
             <ul>
-              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="login.php">LOGIN</a></li>
             </ul>
           </nav>
         </div>

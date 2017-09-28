@@ -34,7 +34,7 @@
 
           <h1>PREGUNTAS FRECUENTES</h1>
           <div class="row">
-            <form class="col-md-12" action="culquierparte.html" method="post">
+            <form class="col-md-12" action="culquierparte.php" method="post">
               <div class="content-bar">
 <p><b>-¿Cuánto cuesta? ¿Con qué medios de pago puedo abonar?</b></p>
 <p>Los city tours son siempre gratuitos. Mejor dicho, son a voluntad. Se espera que al finalizar las 2/3 horas uno pueda aportar un tip o propina a su guía valorando la experiencia vivida. El promedio que cada persona aporta oscila entre 50 y 100 pesos. (siempre está el rata que da monedas y el generoso que aporta bastante más).</p>
@@ -45,7 +45,7 @@
 <p>c) Interés por compartir la experiencia de conocer un lugar nuevo desde la perpectiva de la persona que lo acompaña. </p>
 <p><b>-¿Cómo debo registrarme para acceder al servicio? </b></p>
 <p>Para acceder al servicio mencionado deberá tener en cuenta los siguientes pasos:</p>
-<p>1) Complete el formulario de <a href="register.html" target="_blank">registro</a> en la página de inicio </p>
+<p>1) Complete el formulario de <a href="register.php" target="_blank">registro</a> en la página de inicio </p>
 <p>2) Hacer clic en el en el ítem ENVIAR FORMULARIO .</p>
 <p>3) Recibirá una confirmación con su Usuario y una contraseña provisoria para ingresar por primera vez al portal.</p>
 <p>4) Cambie la contraseña recibida por una de su preferencia.</p>
@@ -59,7 +59,7 @@
   <nav class="nav-footer">
     <ul>
       <li><a href="#">QUIENES SOMOS</a></li>
-      <li><a href="preguntasFrecuentes.html">FAQ</a></li>
+      <li><a href="preguntasFrecuentes.php">FAQ</a></li>
       <li><a href="#">CONTACTO</a></li>
     </ul>
   </nav>

@@ -247,7 +247,7 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
       <nav class="nav-footer">
         <ul>
           <li><a href="#">QUIENES SOMOS</a></li>
-          <li><a href="preguntasFrecuentes.html">FAQ</a></li>
+          <li><a href="preguntasFrecuentes.php">FAQ</a></li>
           <li><a href="#">CONTACTO</a></li>
         </ul>
       </nav>

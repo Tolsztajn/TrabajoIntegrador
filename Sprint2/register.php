@@ -28,8 +28,8 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
           <img src="img/menu.svg" alt="" class="menu-button">
           <nav class="second-nav">
             <ul>
-              <li><a href="#">DESTINOS</a></li>
               <li><a href="#">ACTIVIDADES</a></li>
+              <li><a href="#">LUGARES</a></li>
               <li><a href="#">CRONOGRAMA</a></li>
               <li><a href="#">CITY GUIDE</a></li>
             </ul>

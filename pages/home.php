@@ -2,11 +2,11 @@
   <img src="img/logo-2.svg" alt="" class="logo2">
   <section class="main-post">
   <div class="post-title">
-    <h2 class="sub-title">ALBANIA</h2>
-    <h1 class="post-title">Road trip por Albania #2 — Visitá las distintas ciudades y sus playas</h1>
+    <h2 class="sub-title">ES POSIBLE</h2>
+    <h1 class="post-title">Consegui tu alojamiento soñado y viví las vacaciones que siempre soñaste</h1>
   </div>
   <div class="post-info">
-    <p>Cerca del norte, en dirección al centro de Albania descubrí dos pueblos declarados por la UNESCO como patrimonio cultural.</p>
+    <p>En la playa, en la montaña, en la ciudad, en los suburbios, en medio de la naturaleza. We love to travel siempre con vos.</p>
   </div>
 
 </section>

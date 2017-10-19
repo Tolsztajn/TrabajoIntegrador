@@ -1,48 +1,14 @@
 <?php
 session_start();
-
 $name = $_SESSION["inputsValues"]["name"]?? "";
 $surname = $_SESSION["inputsValues"]["surname"]?? "";
 $telefono = $_SESSION["inputsValues"]["telefono"]?? "";
 $mail = $_SESSION["inputsValues"]["mail"]?? "";
  ?>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
-    </style>
-    <title>We Love to Travel</title>
-  </head>
-  <body>
+<body>
     <div class="container"> <!-- Contenedor principal -->
-      <header> <!-- Encabezado logo + menu -->
-        <div class="first-nav">
-          <img src="img/logo-1.svg" alt="logo wt" class="logo1">
-          <img src="img/menu.svg" alt="" class="menu-button">
-          <nav class="second-nav">
-            <ul>
-              <li><a href="#">ACTIVIDADES</a></li>
-              <li><a href="#">LUGARES</a></li>
-              <li><a href="#">CRONOGRAMA</a></li>
-              <li><a href="#">CITY GUIDE</a></li>
-            </ul>
-          </nav>
-          <nav class="login">
-            <ul>
-              <li><a href="login.php">LOGIN</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-        <main>
+          <main>
           <?php if (!empty($_SESSION["errores"])): ?>
             <div class="row">
               <div class="col-md-12">
@@ -55,7 +21,7 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
             </div>
           <?php endif ?>
           <?php unset($_SESSION["errores"]) ?>
-          <form class="registro" action="php/register.controller.php" method="post">
+          <form class="registro" action="?pagina=register.controller" method="post">
           <!--Datos registro-->
           <input type="text" placeholder="Nombre" name="name"><br>
           <input type="text" placeholder="Apellido" name="surname"><br>
@@ -240,21 +206,8 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
               <input type="submit" value="Crear cuenta" >
             </form>
         </main>
-
-        <!-- Agregar mas destinos x4 -->
     </section>
-    <footer class="main-footer">
-      <nav class="nav-footer">
-        <ul>
-          <li><a href="#">QUIENES SOMOS</a></li>
-          <li><a href="preguntasFrecuentes.php">FAQ</a></li>
-          <li><a href="#">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </footer>
 </div>
-
   </body>
   <!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</html>

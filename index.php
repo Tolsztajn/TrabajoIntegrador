@@ -41,7 +41,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <?php
+<?php
+            if (!isset($_GET['pagina'])) {
+    header('Location: ?pagina=home');
+    exit;
+}
             $pagesPermitidas = ['home','login','preguntasFrecuentes','register'];
             if(isset($_GET['pagina']) && in_array($_GET['pagina'],$pagesPermitidas)){
               include('pages/'.$_GET['pagina'].'.php');

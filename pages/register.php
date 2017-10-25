@@ -23,11 +23,11 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
           <?php unset($_SESSION["errores"]) ?>
           <form class="registro" action="?pagina=register.controller" method="post" enctype="multipart/form-data">
           <!--Datos registro-->
-          <input type="text" placeholder="Nombre" name="name"><br>
-          <input type="text" placeholder="Apellido" name="surname"><br>
-          <input type="text" placeholder="Telefono" name="telefono"><br>
-          <input type="text" placeholder="Mail" name="mail"><br>
-          <input type="password" placeholder="Contraseña" name="password"><br>
+          <input type="text" placeholder="Nombre" name="name" id="name" value=""><br>
+          <input type="text" placeholder="Apellido" name="surname" id="surname" value=""><br>
+          <input type="text" placeholder="Telefono" name="telefono" id="telefono" value=""><br>
+          <input type="text" placeholder="Mail" name="mail" id="mail" value=""><br>
+          <input type="password" placeholder="Contraseña" name="password" id="password" value=""><br>
 
            <!-- DIA DE NACIMIENTO-->
               <select name=birth-day>
@@ -203,7 +203,7 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
                                   <span class="help-block"></span>
               </div>
 <!--agregado-->
-              <input type="submit" value="Crear cuenta" >
+              <input type="submit" name="enviador" value="Crear cuenta" >
             </form>
         </main>
     </section>

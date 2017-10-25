@@ -1,5 +1,5 @@
 <?php
-var_dump($_FILES['avatar']);
+/*var_dump($_FILES['avatar']);
 if($_FILES['avatar']['error']==UPLOAD_ERR_OK){
   $origen=$_FILES['avatar']['tmp_name'];
 
@@ -7,7 +7,7 @@ $ext= pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
 var_dump($ext);
 }
 //move_upload_file($origen,$destino);
-
+*/
 
 session_start();
 

@@ -14,7 +14,7 @@
     <title>We Love to Travel</title>
   </head>
   <body>
-    <div class="container"> <!-- Contenedor principal -->
+    <div class="contenedor"> <!-- Contenedor principal -->
       <header> <!-- Encabezado logo + menu -->
         <div class="first-nav">
           <a href="?pagina=home"><img src="img/logo-1.svg" alt="logo wt" class="logo1"></a>
@@ -38,7 +38,7 @@
         </div>
       </header>
 <!-- main content-->
-      <div class="container">
+      <div class="contenedor">
         <div class="row">
           <div class="col-lg-12">
 <?php

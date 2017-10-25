@@ -7,30 +7,29 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
  ?>
 
 <body>
-    <div class="container"> <!-- Contenedor principal -->
+    <div class="contenedor"> <!-- Contenedor principal -->
           <main>
           <?php if (!empty($_SESSION["errores"])): ?>
-            <div class="row">
-              <div class="col-md-12">
+
+
                 <div class="alert alert-danger">
                   <?php foreach ($_SESSION["errores"] as $value): ?>
                     <p><?php echo $value; ?></p>
                   <?php endforeach ?>
                 </div>
-              </div>
-            </div>
-          <?php endif ?>
+
+              <?php endif ?>
           <?php unset($_SESSION["errores"]) ?>
           <form class="registro" action="?pagina=register.controller" method="post" enctype="multipart/form-data">
           <!--Datos registro-->
-          <input type="text" placeholder="Nombre" name="name" id="name" value=""><br>
-          <input type="text" placeholder="Apellido" name="surname" id="surname" value=""><br>
-          <input type="text" placeholder="Telefono" name="telefono" id="telefono" value=""><br>
-          <input type="text" placeholder="Mail" name="mail" id="mail" value=""><br>
-          <input type="password" placeholder="Contraseña" name="password" id="password" value=""><br>
+          <input type="text" class="form-control" placeholder="Nombre" name="name" id="name" value=""><br>
+          <input type="text" class="form-control" placeholder="Apellido" name="surname" id="surname" value=""><br>
+          <input type="text" class="form-control" placeholder="Telefono" name="telefono" id="telefono" value=""><br>
+          <input type="text"class="form-control" placeholder="Mail" name="mail" id="mail" value=""><br>
+          <input type="password" class="form-control" placeholder="Contraseña" name="password" id="password" value=""><br>
 
            <!-- DIA DE NACIMIENTO-->
-              <select name=birth-day>
+              <select name=birth-day class= "form-control">
                 <option value="">Día</value>
                 <option value="1">1</value>
                 <option value="2">2</value>
@@ -65,7 +64,7 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
                 <option value="31">31</value>
                 </select>
           <!--MES DE NACIMIENTO-->
-                <select name=birth-month>
+                <select name=birth-month class= "form-control">
                   <option value="">Mes</value>
                   <option value="Enero">Enero</value>
                   <option value="Febrero">Febrero</value>
@@ -81,7 +80,7 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
                   <option value="Diciembre">Diciembre</value>
                   </select>
           <!--FECHA DE NACIMIENTO-->
-                <select name="birth-year">
+                <select name="birth-year" class= "form-control">
                 <option value="año">Año</option>
                 <option value="2013">2013</option>
                 <option value="2012">2012</option>
@@ -198,12 +197,12 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
               <p class="hombre">Hombre<input type="radio" name="hombre"></p>
 <!--agregado-->
               <div class="form-group">
-                                  <label for="avatar">Foto de Perfil: </label><br/>
+                                  <label for="avatar" class="fotoPerfil">Foto de Perfil: </label><br/>
                                   <input type="file" class="form-control" name="avatar" id="avatar" value="" />
                                   <span class="help-block"></span>
               </div>
 <!--agregado-->
-              <input type="submit" name="enviador" value="Crear cuenta" >
+              <input type="submit" class="btn btn-default" name="enviador" value="Crear cuenta" >
             </form>
         </main>
     </section>

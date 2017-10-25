@@ -53,11 +53,12 @@ table {
 
 /* -------------------------------------------- */
 
-.container {
+.contenedor {
 	max-width: 768px;
 	margin: 0 auto;
   padding-top: 20px;
 	font-size: 25px;
+	padding-left: 0px;
 
 }
 
@@ -133,7 +134,7 @@ table {
 /* Main Post */
 
 .main-post-img {
-	max-width: 94%;
+	max-width: 98%;
 	position: absolute;
 
 }
@@ -244,7 +245,7 @@ table {
 
 @media (min-width: 768px) {
 
-	.container {
+	.contenedor {
 		max-width: 992px;
 	}
 
@@ -349,7 +350,7 @@ table {
 
 @media (min-width:992px) {
 
-	.container {
+	.contenedor {
 		max-width: 1200px;
 	}
 
@@ -379,7 +380,7 @@ table {
 	}
 
 	.main-post-img {
-		max-width: 91%;
+		max-width: 98%;
 	}
 
 	.sub-title {
@@ -423,18 +424,55 @@ table {
 .mujer, .hombre {
     width: 50%;
     float: left;
-    margin: 0 0 10px;
+    margin-top: 20px;
+		color:  #808285;
+		font-size: 16px;
+		letter-spacing: 5px;
 }
 
 .mujer input, .hombre input{
 	width: 20px!important;
 }
-.registro input {
+.registro select {
+	width: 20%;
+	display: inline-block;
+}
 
-	margin-bottom: 15px;
-	    border: 1px solid grey;
-			padding-left: 5%;
-    width: 95%;
+.fotoPerfil{
+	color:  #808285;
+	font-size: 18px;
+}
+
+/* -------------------------------------------- */
+
+/* Login */
+
+.form {
+	margin: 0 auto;
+	width: 72%;
+}
+
+.login-title{
+	color:  #808285;
+	font-size: 24px;
+}
+
+.login-subtitle {
+	color:  #808285;
+	font-size: 12px;
+	letter-spacing: 5px;
+}
+
+.login-box{
+	color:  #808285;
+	font-size: 12px;
+	padding: 12px 0;
+}
+
+.subinfo {
+	color:  #808285;
+	font-size: 14px;
+	padding-top: 20px;
 }
 
 /* -------------------------------------------- */

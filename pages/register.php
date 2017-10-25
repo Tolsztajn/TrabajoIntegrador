@@ -21,7 +21,7 @@ $mail = $_SESSION["inputsValues"]["mail"]?? "";
             </div>
           <?php endif ?>
           <?php unset($_SESSION["errores"]) ?>
-          <form class="registro" action="?pagina=register.controller" method="post">
+          <form class="registro" action="?pagina=register.controller" method="post" enctype="multipart/form-data">
           <!--Datos registro-->
           <input type="text" placeholder="Nombre" name="name"><br>
           <input type="text" placeholder="Apellido" name="surname"><br>

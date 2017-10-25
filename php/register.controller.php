@@ -1,4 +1,30 @@
 <?php
+var_dump($_FILES['avatar']);
+if($_FILES['avatar']['error']==UPLOAD_ERR_OK){
+  $origen=$_FILES['avatar']['tmp_name'];
+
+$ext= pathinfo($_FILES['avatar']['name']);
+$dir +$nombreImagen + $ext
+  $destino
+
+}
+move_upload_file($origen,$destino);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 session_start();
 
 define("DB_PATH", "../db/usuarios.json");

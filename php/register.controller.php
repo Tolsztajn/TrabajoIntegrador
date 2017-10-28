@@ -13,7 +13,8 @@ session_start();
 
 define("DB_PATH", "../db/usuarios.json");
 
-require "../helpers.php";
+require_once("../helpers.php");
+require_once("pdo.php");
 
 //Validacion
 
@@ -61,13 +62,59 @@ if($errores){
 
 //Crear usuario
 
-$usuario = [
-  "name" => $name,
-  "surname" => $surname,
-  "telefono" => $telefono,
-  "mail" => $mail,
-  "password" => password_hash($password, PASSWORD_DEFAULT)
-];
+function armarUsuario(){
+  $usuario = [
+    "name" => $name,
+    "surname" => $surname,
+    "telefono" => $telefono,
+    "mail" => $mail,
+    "password" => password_hash($password, PASSWORD_DEFAULT)
+  ];
+
+  return $usuario;
+}
+
+function guardarUsuario($usuario){
+  global $db;
+  $query = $db ->prepare("Insert into usuario values (default, :name, :surname, :telefono, :mail, :password)");
+
+      $query->bindValue(":name", $usuario["name"]);
+  		$query->bindValue(":surname", $usuario["surname"]);
+  		$query->bindValue(":telefono", $usuario["telefono"]);
+  		$query->bindValue(":mail", $usuario["mail"]);
+  		$query->bindValue(":password", $usuario["password"]);
+
+  		$id = $db->lastInsertId();
+  		$usuario["id"] = $id;
+
+  		$query->execute();
+
+  		return $usuario;
+}
+
+function traerTodos() {
+		global $db;
+
+		$query = $db->prepare("Select * from usuarios");
+		$query->execute();
+
+		return $query->fetchAll();
+	}
+
+	function traerPorMail($mail) {
+		global $db;
+
+		$query = $db->prepare("Select * from usuarios whereemail = :mail");
+		$query->bindValue(":mail", $mail);
+
+		$query->execute();
+
+		return $query->fetch();
+	}
+
+
+
+
 
 // Recuperar datos
 $usuarios = getUsers("../db/usuarios.json");

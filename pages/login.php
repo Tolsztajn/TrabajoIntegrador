@@ -1,7 +1,21 @@
+<?php
+include_once('../php/login.controller.php');
+?>
 
 <body>
 <div class="form">
 <header> <!-- Encabezado logo + menu -->
+  <?php if (!empty($_SESSION["errores"])): ?>
+
+
+        <div class="alert alert-danger">
+          <?php foreach ($_SESSION["errores"] as $value): ?>
+            <p><?php echo $value; ?></p>
+          <?php endforeach ?>
+        </div>
+
+      <?php endif ?>
+  <?php unset($_SESSION["errores"]) ?>
   <form class="form" action="?pagina=login.controller" method="post">
     <h2 class="login-title">LOGIN</h2>
     <div class="">
@@ -14,11 +28,11 @@
     </div>
     <div class="">
       <label class="login-subtitle">Contraseña</label>
-      <input type="password" class="form-control" placeholder="&#128272;Contraseña" name="contrasena">
+      <input type="password" class="form-control" placeholder="&#128272;Contraseña" name="password">
     </div>
     <div class="">
       <label for="" class="login-box">
-        <input type="checkbox" name="" value="">Recordarme
+        <input type="checkbox" name="Recordarme" value="recordarme">Recordarme
       </label>
     </div>
     <button type="submit" name="button" class="btn btn-default">Ingresar</button>

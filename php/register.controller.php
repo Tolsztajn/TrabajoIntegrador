@@ -64,11 +64,11 @@ if($errores){
 
 function armarUsuario(){
   $usuario = [
-    "name" => $name,
-    "surname" => $surname,
-    "telefono" => $telefono,
-    "mail" => $mail,
-    "password" => password_hash($password, PASSWORD_DEFAULT)
+    "name" => $_POST["name"],
+    "surname" => $_POST["surname"],
+    "telefono" => $_POST["telefono"],
+    "mail" => $_POST["mail"],
+    "password" => password_hash($_POST["password"], PASSWORD_DEFAULT)
   ];
 
   return $usuario;
@@ -104,7 +104,7 @@ function traerTodos() {
 	function traerPorMail($mail) {
 		global $db;
 
-		$query = $db->prepare("Select * from usuarios whereemail = :mail");
+		$query = $db->prepare("Select * from usuarios wheremail = :mail");
 		$query->bindValue(":mail", $mail);
 
 		$query->execute();

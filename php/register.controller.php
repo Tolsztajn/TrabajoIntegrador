@@ -13,8 +13,9 @@ session_start();
 
 define("DB_PATH", "../db/usuarios.json");
 
-require_once("../helpers.php");
-require_once("pdo.php");
+include "../helpers.php";
+include "pdo.php";
+include "/Clases/Usuario.php";
 
 //Validacion
 
@@ -62,7 +63,7 @@ if($errores){
 
 //Crear usuario
 
-function armarUsuario(){
+function crearUsuario(){
   $usuario = [
     "name" => $_POST["name"],
     "surname" => $_POST["surname"],
@@ -74,7 +75,7 @@ function armarUsuario(){
   return $usuario;
 }
 
-function guardarUsuario($usuario){
+/*function guardarUsuario($usuario){
   global $db;
   $query = $db ->prepare("Insert into usuario values (default, :name, :surname, :telefono, :mail, :password)");
 
@@ -90,7 +91,16 @@ function guardarUsuario($usuario){
   		$query->execute();
 
   		return $usuario;
-}
+}*/
+
+
+$usuario = new Usuario ($_POST['name'],$_POST['surname'],$_POST['telefono'],$_POST['mail'],$_POST['password']);
+$usuario->save();
+exit;
+
+
+
+
 
 function traerTodos() {
 		global $db;

@@ -5,22 +5,24 @@ session_start();
 
 $errores = [];
 
-$usuario = trim($_POST ["usuario"]);
-if ($usuario == "") {
-  $errores[]= "El nombre de usuario es obligatorio";
-}
+  $usuario = trim($_POST ["usuario"]);
+  if ($usuario == "") {
+    $errores[]= "El nombre de usuario es obligatorio";
+  }
 
-$email = trim($_POST ["email"]);
-if ($email == "") {
-  $errores[]= "El email es obligatorio";
-} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $errores[]= "El email ingresado no es válido";
-}
+  $email = trim($_POST ["email"]);
+  if ($email == "") {
+    $errores[]= "El email es obligatorio";
+  } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errores[]= "El email ingresado no es válido";
+  }
 
-$password = trim($_POST["password"]);
-if ($password =="") {
-  $errores["password"]="La password es obligatoria";
-}
+  $password = trim($_POST["password"]);
+  if ($password =="") {
+    $errores["password"]="La password es obligatoria";
+  }
+
+
 
 //Falta validacion concuerda pass con usuario y mail
 

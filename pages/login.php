@@ -1,5 +1,5 @@
 <?php
-include '../php/login.controller.php';
+include 'php/login.controller.php';
 ?>
 
 <body>

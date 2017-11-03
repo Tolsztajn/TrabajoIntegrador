@@ -46,7 +46,7 @@ class Usuario {
 
 }
 
-
+//faltan los getters y los setters
 
 
  ?>

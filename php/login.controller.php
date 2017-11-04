@@ -66,13 +66,13 @@ if($_POST){
     if (isset($_POST["recordarme"])) {
       recordarme($_POST["email"]); //Recordame
     }
-    header("Location:../home.php");
+    header("Location:../pages/home.php");
   }
 
 
   $_SESSION ["usuario"] = $_POST["usuario"];
   if (estaLogueado()) {
-  header("Location:../home.php");
+  header("Location:../pages/home.php");
   exit;
   }
 
@@ -80,7 +80,7 @@ if($_POST){
 
 
 
-  
+
 }
 
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once("usuario.php");
+require_once("Usuario.php");
 
 abstract class DB {
     public abstract function guardarUsuario(Usuario $usuario);

@@ -1,6 +1,6 @@
 <?php
 
-require_once("db.php");
+require_once("Db.php");
 
 class Validador {
   public function validarInformacion($informacion, DB $db) {

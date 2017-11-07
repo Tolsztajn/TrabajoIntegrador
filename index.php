@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="contenedor"> <!-- Contenedor principal -->
-      <header> <!-- Encabezado logo + menu -->
+      <header> <!-- Encabezado logo +  menu -->
         <div class="first-nav">
           <a href="?pagina=home"><img src="img/logo-1.svg" alt="logo wt" class="logo1"></a>
           <img src="img/menu.svg" alt="" class="menu-button">
